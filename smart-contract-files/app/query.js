@@ -14,7 +14,6 @@ async function setup(){
 
   const accounts = await web3.eth.getAccounts()
   let subscriber = accounts[0]
-  console.log(accounts)
   abi = JSON.parse(abi)
   let subContract = new web3.eth.Contract(abi.abi,subAddress)
   // let tx = await subContract.methods.setProvider(provider,wutils.utf8ToHex(endpoint)).send({from:subscriber, gasPrice:4000000000})
@@ -30,12 +29,10 @@ async function setup(){
   // tx = await zapBondage.delegateBond({provider, endpoint, dots:2, subscriber:subAddress, from:subscriber})
   // console.log(tx)
   const boundDots = await zapBondage.getBoundDots({provider,subscriber:subAddress,endpoint})
-  console.log(boundDots)
   // tx = await subContract.methods.query("queryFromPropulsor",[wutils.utf8ToHex("ETH"),wutils.utf8ToHex("BTC")]).send({from:subscriber,gasPrice:4000000000})
   // console.log(tx)
   // console.log(JSON.stringify(tx))
   tx = await subContract.methods.unbond(wutils.utf8ToHex(endpoint),wutils.toHex(1)).send({from:subscriber,gasPrice:4000000000})
-  console.log(tx)
 }
 setup()
 .then(console.log)

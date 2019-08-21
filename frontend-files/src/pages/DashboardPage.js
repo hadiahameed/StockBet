@@ -87,8 +87,7 @@ import {
         this.setState({bet:<Button disabled={this.state.disabledButton} onClick={this.bond}>Bet</Button>})
         let arr = this.state.betList
         arr.push(<Betcard key={this.randomSerial()} compId = {ID} team1 = {this.state.team1} team2 = {this.state.team2} sdate = {this.state.sdate} bet = {<Button disabled={this.state.disabledButton} onClick={this.bond}>Bet</Button>}/>)
-        console.log(arr)
-        this.setState({betList:arr}, () => {console.log(this.state.betList)})
+        this.setState({betList:arr})
 
       }
     parseData(data,i) {
