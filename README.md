@@ -6,7 +6,7 @@ Furthermore, the dApp also displays the current top 4 stocks and their values.
 ![](front-end.png)
 
 ```diff
-- ***Make sure your Metamask account is up an running when you run this application. This is a demo App and does not cost any ZAP for running.***
+- **Make sure your Metamask account is up an running when you run this application. This is a demo App and does not cost any ZAP for running.**
 ```
 
 ## How to run it
