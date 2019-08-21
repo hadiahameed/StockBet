@@ -9,12 +9,17 @@ Furthermore, the dApp also displays the current top 4 stocks and their values.
 - Make sure your Metamask account is up an running when you run this application. This is a demo App and does not cost any ZAP for running.
 ```
 
-## How to run it
-- In `oracles-files` directory, add your MetaMask mnemonic in Config.ts and run the following commands
-  + `yarn`
-  + `npm start`
-Let it run in a separate terminal
-- In `frontend-files` directory, run `npm start`
+## How to run the project:
+- In `oracles-files` directory, 
+  + add your MetaMask mnemonic in Config.ts.
+  + Run `yarn`
+  + Run `npm start`. 
+    Let it run in a separate terminal
+- In `frontend-files` directory
+  + run `yarn`
+  + run `npm start`
+
+## How to bet on stocks:
 - Get the symbol list of stocks from here: https://financialmodelingprep.com/api/v3/company/stock/list
 - Example Query:
  + Stock 1 = AAPL
