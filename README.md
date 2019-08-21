@@ -23,7 +23,7 @@ Let it run in a separate terminal
  ![](example.png)
 
  - Result:
-
+ ![](result.png)
 
 ## APIs Used
 - For getting the top 4 gainers: https://financialmodelingprep.com/api/v3/stock/gainers
